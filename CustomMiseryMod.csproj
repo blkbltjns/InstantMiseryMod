@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>CustomMiseryMod</AssemblyName>
+    <Version>1.0.0</Version>
+    <!-- Fixes the MSB3270 Architecture Warning -->
+    <PlatformTarget>x64</PlatformTarget>
+    <!-- Stops the compiler from outputting all the game DLLs to your build folder -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Automatically references every single game DLL in the lib folder -->
+    <Reference Include="lib\*.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

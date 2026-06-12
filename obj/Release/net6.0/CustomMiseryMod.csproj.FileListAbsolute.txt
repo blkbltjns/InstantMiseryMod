@@ -1,0 +1,12 @@
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.csproj.AssemblyReference.cache
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.GeneratedMSBuildEditorConfig.editorconfig
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.AssemblyInfoInputs.cache
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.AssemblyInfo.cs
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.csproj.CoreCompileInputs.cache
+E:\dev\CustomMiseryMod\bin\Release\net6.0\CustomMiseryMod.deps.json
+E:\dev\CustomMiseryMod\bin\Release\net6.0\CustomMiseryMod.dll
+E:\dev\CustomMiseryMod\bin\Release\net6.0\CustomMiseryMod.pdb
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.dll
+E:\dev\CustomMiseryMod\obj\Release\net6.0\refint\CustomMiseryMod.dll
+E:\dev\CustomMiseryMod\obj\Release\net6.0\CustomMiseryMod.pdb
+E:\dev\CustomMiseryMod\obj\Release\net6.0\ref\CustomMiseryMod.dll
