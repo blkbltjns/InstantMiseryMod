@@ -14,12 +14,12 @@ namespace CustomMiseryMod
     internal class CustomMiserySettings : JsonModSettings
     {
         [Name("Enable Instant Misery")]
-        [Description("If enabled, launching a Misery run will instantly apply all 6 afflictions on Day 1.")]
+        [Description("If enabled, launching a Misery run will instantly apply all 6 afflictions on spawn.")]
         public bool EnableInstantMisery = false;
 
-        [Name("Allow Healing with Broken Body")]
+        [Name("Allow Sleep Healing with Broken Body")]
         [Description("If enabled, you can heal during sleep, but you STILL take double damage from Broken Body.")]
-        public bool AllowHealing = true;
+        public bool AllowSleepHealingWithBrokenBody = true;
     }
 
     internal static class Settings
@@ -113,7 +113,7 @@ namespace CustomMiseryMod
 
         private static void ApplyHealingOverride(Condition __instance, float hp, float originalHP)
         {
-            if (hp > 0 && Settings.options.AllowHealing)
+            if (hp > 0 && Settings.options.AllowSleepHealingWithBrokenBody)
             {
                 float expectedHP = Mathf.Min(originalHP + hp, __instance.m_MaxHP);
                 if (__instance.m_CurrentHP < expectedHP)
