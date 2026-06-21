@@ -4,7 +4,7 @@ A MelonLoader mod for The Long Dark that allows customization of the Misery game
 
 ## Features
 - **Enable Instant Misery**: Applies all 6 misery afflictions on spawn.
-- **Allow Sleep Healing with Broken Body**: Heal during sleep while still taking double damage.
+- **Allow Sleep Healing with Broken Body**: Heal during sleep (note that all other healing restrictions and the double damage from Broken Body still apply).
 
 ## Installation
 1. Install MelonLoader.

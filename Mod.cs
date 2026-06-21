@@ -18,7 +18,7 @@ namespace InstantMiseryMod
         public bool EnableInstantMisery = false;
 
         [Name("Allow Sleep Healing with Broken Body")]
-        [Description("If enabled, you can heal during sleep, but you STILL take double damage from Broken Body.")]
+        [Description("If enabled, you can heal during sleep, but all other healing restrictions and the double damage from Broken Body still apply.")]
         public bool AllowSleepHealingWithBrokenBody = true;
     }
 
@@ -49,7 +49,7 @@ namespace InstantMiseryMod
     {
         public static bool hasCheckedForMiseryThisScene = false;
         public static int frameDelay = 0;
-        private static readonly FieldInfo m_StateField = typeof(Il2CppTLD.Gameplay.MiseryManager).GetField("m_State", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+        private static readonly FieldInfo _stateField = typeof(Il2CppTLD.Gameplay.MiseryManager).GetField("m_State", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
         // instant misery patch
         // inject afflictions 1 second after spawning
@@ -71,7 +71,7 @@ namespace InstantMiseryMod
                     {
                         // Lock the internal calendar so it doesn't double-apply the afflictions later
                         try {
-                            if (m_StateField != null) m_StateField.SetValue(miseryManager, 6);
+                            if (_stateField != null) _stateField.SetValue(miseryManager, 6);
                         } catch { }
 
                         // Inject all 6 Afflictions
