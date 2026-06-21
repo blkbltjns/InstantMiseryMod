@@ -5,13 +5,13 @@ using Il2Cpp;
 using ModSettings;
 using System.Reflection;
 
-[assembly: MelonInfo(typeof(CustomMiseryMod.CustomMiseryMod), "CustomMiseryMod", "1.0.0", "Author")]
+[assembly: MelonInfo(typeof(InstantMiseryMod.InstantMiseryMod), "InstantMiseryMod", "1.0.0", "Author")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
 
-namespace CustomMiseryMod
+namespace InstantMiseryMod
 {
     // --- MOD SETTINGS ---
-    internal class CustomMiserySettings : JsonModSettings
+    internal class InstantMiserySettings : JsonModSettings
     {
         [Name("Enable Instant Misery")]
         [Description("If enabled, launching a Misery run will instantly apply all 6 afflictions on spawn.")]
@@ -24,17 +24,17 @@ namespace CustomMiseryMod
 
     internal static class Settings
     {
-        public static CustomMiserySettings options = new CustomMiserySettings();
+        public static InstantMiserySettings options = new InstantMiserySettings();
         public static void OnLoad() { options.AddToModSettings("Custom Misery Options"); }
     }
 
     // --- MOD INIT ---
-    public class CustomMiseryMod : MelonMod
+    public class InstantMiseryMod : MelonMod
     {
         public override void OnInitializeMelon()
         {
             Settings.OnLoad();
-            MelonLogger.Msg("Custom Misery Mod loaded. Broken Body healing override active.");
+            MelonLogger.Msg("Instant Misery Mod loaded. Broken Body healing override active.");
         }
 
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)

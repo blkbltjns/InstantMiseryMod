@@ -1,4 +1,4 @@
-# CustomMiseryMod
+# InstantMiseryMod
 
 A MelonLoader mod for The Long Dark that allows customization of the Misery game mode.
 
@@ -8,5 +8,5 @@ A MelonLoader mod for The Long Dark that allows customization of the Misery game
 
 ## Installation
 1. Install MelonLoader.
-2. Download `CustomMiseryMod.dll` from the `Releases` folder in this repository.
-3. Place `CustomMiseryMod.dll` in your game's `Mods` folder.
+2. Download `InstantMiseryMod.dll` from the `Releases` folder in this repository.
+3. Place `InstantMiseryMod.dll` in your game's `Mods` folder.
