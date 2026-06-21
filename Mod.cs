@@ -90,35 +90,9 @@ namespace CustomMiseryMod
         // HEAL WITH BROKEN BODY PATCH
         // We patch all 3 signatures of AddHealth to manually inject the health Broken Body tries to throw away.
         [HarmonyPatch(typeof(Condition), "AddHealth", new System.Type[] { typeof(float), typeof(DamageSource), typeof(bool) })]
-        public class Condition_AddHealth_3Param_Patch
-        {
-            public static void Prefix(Condition __instance, float hp, out float __state)
-            {
-                __state = GetOriginalHP(__instance);
-            }
-
-            public static void Postfix(Condition __instance, float hp, float __state)
-            {
-                ApplyHealingOverride(__instance, hp, __state);
-            }
-        }
-
         [HarmonyPatch(typeof(Condition), "AddHealth", new System.Type[] { typeof(float), typeof(DamageSource) })]
-        public class Condition_AddHealth_2Param_Patch
-        {
-            public static void Prefix(Condition __instance, float hp, out float __state)
-            {
-                __state = GetOriginalHP(__instance);
-            }
-
-            public static void Postfix(Condition __instance, float hp, float __state)
-            {
-                ApplyHealingOverride(__instance, hp, __state);
-            }
-        }
-
         [HarmonyPatch(typeof(Condition), "AddHealthWithNoHudNotification", new System.Type[] { typeof(float), typeof(DamageSource) })]
-        public class Condition_AddHealthNoHud_Patch
+        public class Condition_AddHealth_Patch
         {
             public static void Prefix(Condition __instance, float hp, out float __state)
             {
