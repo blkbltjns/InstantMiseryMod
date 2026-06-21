@@ -49,6 +49,7 @@ namespace CustomMiseryMod
     {
         public static bool hasCheckedForMiseryThisScene = false;
         public static int frameDelay = 0;
+        private static readonly FieldInfo m_StateField = typeof(Il2CppTLD.Gameplay.MiseryManager).GetField("m_State", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
         // instant misery patch
         // inject afflictions 1 second after spawning
@@ -70,8 +71,7 @@ namespace CustomMiseryMod
                     {
                         // Lock the internal calendar so it doesn't double-apply the afflictions later
                         try {
-                            var field = typeof(Il2CppTLD.Gameplay.MiseryManager).GetField("m_State", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-                            if (field != null) field.SetValue(miseryManager, 6);
+                            if (m_StateField != null) m_StateField.SetValue(miseryManager, 6);
                         } catch { }
 
                         // Inject all 6 Afflictions
