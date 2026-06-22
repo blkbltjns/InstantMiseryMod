@@ -5,7 +5,7 @@ using Il2Cpp;
 using ModSettings;
 using System.Reflection;
 
-[assembly: MelonInfo(typeof(InstantMiseryMod.InstantMiseryMod), "InstantMiseryMod", "1.0.0", "Author")]
+[assembly: MelonInfo(typeof(InstantMiseryMod.InstantMiseryMod), "InstantMiseryMod", "1.0.0", "Mike Gates")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
 
 namespace InstantMiseryMod
