@@ -8,10 +8,9 @@ A MelonLoader mod for The Long Dark that allows customization of the Misery game
 
 ## Design Philosophy
 
-This mod is designed to create a more intense early-game challenge while making long-term survival actually viable:
-* **Brutal Start**: Enforcing all 6 afflictions from day one makes the beginning of your run much more difficult.
-* **Indefinite Play**: By allowing healing *only* during sleep (all other healing items and passive health regeneration sources are still blocked), you can theoretically survive indefinitely. This removes the hard cap of the standard "no healing" mechanic—which can feel like a timer rather than a challenge—while keeping the double-damage threat active.
-* **Survival vs. Speedrunning**: On Interloper and normal Misery, I always felt the basic needs of warmth and food were sorted out pretty early, turning the rest of the run into a speedrun to get a forge going. With this mod, you start with all 6 afflictions, so you end up spending days just trying not to freeze or starve while moving between shelters. It takes real planning just to survive the night, which makes finally reaching the point where you can craft feel like a massive achievement.
+This mod shifts the early-game focus in Misery from a sprint toward crafting tools to pure survival. On standard Interloper and Misery, you usually sort out the basic needs of warmth and food pretty early, which turns the rest of the run into a speedrun to get a forge going. Starting with all 6 afflictions changes that. You end up spending your first few days just fighting to stay warm and fed while moving between shelters, requiring real planning just to survive the night.
+
+To balance this brutal start, the mod allows healing only when you sleep. The Broken Body affliction normally blocks all healing, which leads to pure attrition until death with no chance to recover. By letting you heal during sleep—while keeping other healing items blocked and the double-damage threat active—you have a theoretical path to survive indefinitely.
 
 ## Installation
 1. Install MelonLoader.
