@@ -1,16 +1,15 @@
 # InstantMiseryMod
 
-A MelonLoader mod for The Long Dark that allows customization of the Misery game mode.
+A MelonLoader mod for The Long Dark to customize the Misery game mode.
 
-## Features
-- **Enable Instant Misery**: Applies all 6 misery afflictions on spawn.
-- **Allow Sleep Healing with Broken Body**: Heal during sleep (note that all other healing restrictions and the double damage from Broken Body still apply).
+## Settings
+* **Enable Instant Misery**: Spawns you with all 6 misery afflictions right away.
+* **Allow Sleep Healing with Broken Body**: Lets you heal during sleep. Other healing restrictions and the double-damage penalty still apply.
 
-## Design Philosophy
+## Why this mod?
+On normal Interloper and Misery, it's pretty easy to sort out your food and warmth early on. Once you do that, the game just turns into a race to get a forge going and craft tools. Starting with all 6 afflictions changes the dynamic. You'll spend your first few days just struggling to stay warm and fed while traveling between shelters, and it takes real planning just to survive the night. 
 
-This mod shifts the early-game focus in Misery from a sprint toward crafting tools to pure survival. On standard Interloper and Misery, you usually sort out the basic needs of warmth and food pretty early, which turns the rest of the run into a speedrun to get a forge going. Starting with all 6 afflictions changes that. You end up spending your first few days just fighting to stay warm and fed while moving between shelters, requiring real planning just to survive the night.
-
-To balance this brutal start, the mod allows healing only when you sleep. The Broken Body affliction normally blocks all healing, which leads to pure attrition until death with no chance to recover. By letting you heal during sleep—while keeping other healing items blocked and the double-damage threat active—you have a theoretical path to survive indefinitely. If you want the true Broken Body experience, this option can be disabled in the mod settings.
+To make this setup actually playable, the mod lets you heal when you sleep. Normally, Broken Body blocks all healing completely, which means you just slowly die of attrition with no way to recover. Allowing healing during sleep gives you a path to survive long-term, while still keeping other healing items disabled and keeping the double-damage threat active. If you want the original, no-healing experience, you can turn sleep healing off in the settings.
 
 ## Installation
 1. Install MelonLoader.
