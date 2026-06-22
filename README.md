@@ -16,3 +16,8 @@ To balance this brutal start, the mod allows healing only when you sleep. The Br
 1. Install MelonLoader.
 2. Download `InstantMiseryMod.dll` from the `Releases` folder in this repository.
 3. Place `InstantMiseryMod.dll` in your game's `Mods` folder.
+
+## How to Use
+1. Launch the game, select **Options** from the main menu, and open **Mod Settings**.
+2. Configure your preferences under the **Instant Misery Options** section.
+3. Start a new **Misery** game run.

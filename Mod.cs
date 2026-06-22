@@ -25,7 +25,7 @@ namespace InstantMiseryMod
     internal static class Settings
     {
         public static InstantMiserySettings options = new InstantMiserySettings();
-        public static void OnLoad() { options.AddToModSettings("Custom Misery Options"); }
+        public static void OnLoad() { options.AddToModSettings("Instant Misery Options"); }
     }
 
     // --- MOD INIT ---
